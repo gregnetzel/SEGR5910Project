@@ -7,8 +7,6 @@ RUN apt-get update && \
 	cd application && \
 	wget https://s3-us-west-2.amazonaws.com/techops-interview-webapp/webapp.tar.gz && \
 	tar -xzf webapp.tar.gz && \
-	cd ..
+	mv dist/example-webapp-linux .
 
-EXPOSE 3000 3000
-
-CMD ["bash", "/application/initialization_script"]
+CMD ["/application/example-webapp-linux"]
