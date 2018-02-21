@@ -4,5 +4,8 @@ services:
     build: .
     ports:
      - "3000:3000"
-  redis:
+  redis-master:
     image: "redis"
+  redis-slave:
+    image: "redis"
+    command: redis-server --slaveof redis-master 6379
