@@ -3,6 +3,10 @@ services:
   web:
     build: .
     ports:
+<<<<<<< HEAD
      - "3000:3000"
   redis:
     image: "redis"
+=======
+     - "3000:3000"
+>>>>>>> c9224aa6f64bfb63117670147acb8c07aff348f4
