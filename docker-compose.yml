@@ -6,4 +6,3 @@ services:
      - "3000:3000"
   redis:
     image: "redis"
-     - "3000:3000"
