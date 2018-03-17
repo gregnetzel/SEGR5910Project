@@ -1,9 +1,21 @@
 version: '3'
 services:
-  web:
-    build: .
+  nginx:
+    build: ./nginx
     ports:
-     - "3000:3000"
+      - "800:800"
+  web1:
+    build: ./web
+    ports:
+     - "3000"
+  web2:
+    build: ./web
+    ports:
+     - "3000"
+  web3:
+    build: ./web
+    ports:
+     - "3000"
   redis-master:
     image: "redis"
   redis-slave:
