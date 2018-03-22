@@ -2,6 +2,7 @@
 
 To run the guestbook applications all that should be needed is to type
 "docker-compose up -d"
+The website is can be found on 127.0.01:800
 while in the directory with the docker-compose.yml file.
 
 If you want to take it down the command is
